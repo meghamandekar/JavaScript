@@ -1,0 +1,266 @@
+- Our JavaScript Tutorial is designed for beginners and professionals both. JavaScript is used to create client-side dynamic pages.
+
+- JavaScript is an object-based scripting language which is lightweight and cross-platform.
+
+-JavaScript code: within body tag, within head tag and external JavaScript file.
+
+Example
+<script type="text/javascript">  
+document.write("JavaScript is a simple language for javatpoint learners");  
+</script>  
+
+- The document.write() function is used to display dynamic content through JavaScript. 
+
+1) JavaScript Example : code between the body tag
+
+In the above example, we have displayed the dynamic content using JavaScript. Let’s see the simple example of JavaScript that displays alert dialog box.
+
+<script type="text/javascript">  
+ alert("Hello Javatpoint");  
+</script>  
+
+
+2) JavaScript Example : code between the head tag
+Let’s see the same example of displaying alert dialog box of JavaScript that is contained inside the head tag.
+
+In this example, we are creating a function msg(). To create function in JavaScript, you need to write function with function_name as given below.
+
+
+<html>  
+<head>  
+<script type="text/javascript">  
+function msg(){  
+ alert("Hello Javatpoint");  
+}  
+</script>  
+</head>  
+<body>  
+<p>Welcome to JavaScript</p>  
+<form>  
+<input type="button" value="click" onclick="msg()"/>  
+</form>  
+</body>  
+</html>  
+
+3) External JavaScript file
+We can create external JavaScript file and embed it in many html page.
+
+It provides code re usability because single JavaScript file can be used in several html pages.
+
+- t helps in the reusability of code in more than one HTML file.
+- It allows easy code readability.
+- It is time-efficient as web browsers cache the external js files, which further reduces the page loading time.
+
+Types of JavaScript Comments
+
+# There are two types of comments in JavaScript
+1. Single-line Comment - It is represented by double forward slashes (//). It can be used before and after the statement.
+2. Multi-line Comment - It can be used to add single as well as multi line comments. So, it is more convenient.
+
+It is represented by forward slash with asterisk then asterisk with forward slash. 
+
+# JavaScript Variable
+- A JavaScript variable is simply a name of storage location. There are two types of variables in JavaScript : local variable and global variable.
+
+- There are some rules while declaring a JavaScript variable (also known as identifiers).
+
+- Name must start with a letter (a to z or A to Z), underscore( _ ), or dollar( $ ) sign.
+- After first letter we can use digits (0 to 9), for example value1.
+- JavaScript variables are case sensitive, for example x and X are different variables.
+
+- A JavaScript global variable is accessible from any function. A variable i.e. declared outside the function or declared with window object is known as global variable. For example:
+
+<script>  
+var data=200;//gloabal variable  
+function a(){  
+document.writeln(data);  
+}  
+function b(){  
+document.writeln(data);  
+}  
+a();//calling JavaScript function  
+b();  
+</script>  
+
+- Now it can be declared inside any function and can be accessed from any function. For example:
+
+function m(){  
+window.value=100;//declaring global variable by window object  
+}  
+function n(){  
+alert(window.value);//accessing global variable from other function  
+}  
+
+- JavaScript provides different data types to hold different types of values. There are two types of data types in JavaScript.
+
+1. Primitive data type
+2. Non-primitive (reference) data type
+
+- JavaScript is a dynamic type language, means you don't need to specify type of the variable because it is dynamically used by JavaScript engine.
+
+- There are five types of primitive data types in JavaScript.
+
+1. String -	represents sequence of characters e.g. "hello"
+2. Number - represents numeric values e.g. 100
+3. Boolean - represents boolean value either false or true
+4. Undefined - represents undefined value
+5. Null - represents null i.e. no value at all
+
+- JavaScript non-primitive data types
+1. Object - represents instance through which we can access members
+2. Array-represents group of similar values
+3. RegExp- represents regular expression
+
+# There are following types of operators in JavaScript.
+
+1. Arithmetic Operators -  Arithmetic operators are used to perform arithmetic operations on the operands. 
+2. Comparison (Relational) Operators - The JavaScript comparison operator compares the two operands.
+3. Bitwise Operators - The bitwise operators perform bitwise operations on operands.
+4. Logical Operators - The following operators are known as JavaScript logical operators.
+5. Assignment Operators - The following operators are known as JavaScript assignment operators.
+6. Special Operators - The following operators are known as JavaScript special operators.
+
+# JavaScript If-else
+The JavaScript if-else statement is used to execute the code whether condition is true or false. 
+
+1. JavaScript If statement
+
+- It evaluates the content only if expression is true. The signature of JavaScript if statement is given below.
+
+if(expression){  
+//content to be evaluated  
+} 
+
+2. JavaScript If...else Statement
+
+- It evaluates the content whether condition is true of false. The syntax of JavaScript if-else statement is given below.
+Play
+
+if(expression){  
+//content to be evaluated if condition is true  
+}  
+else{  
+//content to be evaluated if condition is false  
+}  
+
+3. JavaScript If...else if statement
+
+- It evaluates the content only if expression is true from several expressions. The signature of JavaScript if else if statement is given below.
+
+if(expression1){  
+//content to be evaluated if expression1 is true  
+}  
+else if(expression2){  
+//content to be evaluated if expression2 is true  
+}  
+else if(expression3){  
+//content to be evaluated if expression3 is true  
+}  
+else{  
+//content to be evaluated if no expression is true  
+}  
+
+# JavaScript Switch
+- The JavaScript switch statement is used to execute one code from multiple expressions.
+
+Ex-
+<script>  
+var grade='B';  
+var result;  
+switch(grade){  
+case 'A':  
+result="A Grade";  
+break;  
+case 'B':  
+result="B Grade";  
+break;  
+case 'C':  
+result="C Grade";  
+break;  
+default:  
+result="No Grade";  
+}  
+document.write(result);  
+</script>  
+
+# JavaScript Loops
+- The JavaScript loops are used to iterate the piece of code using for, while, do while or for-in loops.
+
+1. 1) JavaScript For loop
+
+The JavaScript for loop iterates the elements for the fixed number of times.
+
+Ex-
+<script>  
+for (i=1; i<=5; i++)  
+{  
+document.write(i + "<br/>")  
+}  
+</script>
+
+2. JavaScript while loop
+
+The JavaScript while loop iterates the elements for the infinite number of times.
+
+<script>  
+var i=11;  
+while (i<=15)  
+{  
+document.write(i + "<br/>");  
+i++;  
+}  
+</script>  
+
+3. JavaScript do while loop
+
+The JavaScript do while loop iterates the elements for the infinite number of times like while loop. But, code is executed at least once whether condition is true or false. 
+
+Ex 
+<script>  
+var i=21;  
+do{  
+document.write(i + "<br/>");  
+i++;  
+}while (i<=25);  
+</script>  
+
+4. The JavaScript for in loop is used to iterate the properties of an object.
+
+# JavaScript Functions
+- JavaScript functions are used to perform operations. 
+
+There are mainly two advantages of JavaScript functions.
+1. Code reusability: We can call a function several times so it save coding.
+2. Less coding: It makes our program compact. We don’t need to write many lines of code each time to perform a common task.
+
+Ex 
+<script>  
+function msg(){  
+alert("hello! this is message");  
+}  
+</script>  
+<input type="button" onclick="msg()" value="call function"/>  
+
+- JavaScript Function Arguments
+We can call function by passing arguments. 
+<script>  
+function getcube(number){  
+alert(number*number*number);  
+}  
+</script>  
+<form>  
+<input type="button" value="click" onclick="getcube(4)"/>  
+</form>  
+
+- Function with Return Value
+
+We can call function that returns a value and use it in our program. 
+
+<script>  
+function getInfo(){  
+return "hello javatpoint! How r u?";  
+}  
+</script>  
+<script>  
+document.write(getInfo());  
+</script>  
